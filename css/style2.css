@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.global-holder {
+  height: 95vh;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 15%; /* reduced from 20% */
+  height: auto;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+  font-size: 12px; /* globally smaller font */
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.profile-section h3 {
+  text-align: center;
+}
+
+.school-logo {
+  width: 50px; /* smaller image */
+  height: 50px;
+  border-radius: 50%;
+}
+
+.nav-section,
+.settings-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.nav-link .icon {
+  width: 16px; /* smaller icon */
+  margin-right: 8px;
+}
+
+/* PAGE */
+
+.page {
+  width: 100%;
+  margin: 0 5%;
+  border-radius: 10px;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
