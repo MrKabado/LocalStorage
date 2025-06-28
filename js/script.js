@@ -70,7 +70,7 @@ function register(event) {
     localStorage.setItem(`studentName${count}`, document.getElementById('student-name').value);
     localStorage.setItem(`studentID${count}`, document.getElementById('student-id').value);
 
-    regDisplay.innerText = 'Registered Successfully';
+    regDisplay.innerText = 'Registered Successfully, Go to Login';
     regDisplay.style = 'color: green; font-size: 10px';
 
     document.getElementById('pass').value = '';
@@ -79,6 +79,7 @@ function register(event) {
     document.getElementById('student-name').value = '';
     document.getElementById('student-id').value = '';
 
+
     setTimeout(() => {
         if(regDisplay) {
             regDisplay.style = 'display: none;';
@@ -86,6 +87,7 @@ function register(event) {
             regDisplay.style = '#2ecc71; display: block;';
         }
     }, 5000);
+
 }
 
 function login(event) {

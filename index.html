@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
     <div class="global-holder">
@@ -15,17 +15,8 @@
                 <input id="logPass" type="password" placeholder="password" required>
                 <p style="cursor: pointer;" id="showDisplay" class="show-pass" onclick="showPass()">show password</p>
                 <button type="submit" class="login-btn">Login</button>
+                <a href="/register.html" style="cursor: pointer;" id="goRegister" class="show-pass" onclick="">don't have an account?</a>
                 <p id="logDisplay"></p>
-            </form>
-            <form id="reg-form" class="register" onsubmit="register(event)">
-                <h3>REGISTER</h3>
-                <input id="user" type="text" placeholder="username" required>
-                <input id="student-name" type="text" placeholder="full name" required>
-                <input id="student-id" type="number" placeholder="student id" required> 
-                <input id="pass" type="password" placeholder="password" required>
-                <input id="confirm-pass" type="password" placeholder="confirm password" required>
-                <button type="submit" class="register-btn">Register</button>
-                <p id="regDisplay"></p>
             </form>
         </div>
     </div>
