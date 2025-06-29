@@ -3,3 +3,7 @@ let studentName = document.getElementById('student-name');
 
 let studentID = document.getElementById('student-id');
   studentID.innerHTML = `${localStorage.getItem(`studentID${localStorage.getItem(`finder`)}`)}`;
+
+function goEditProfile() {
+  window.location.href = '../pages/edit-profile.html';
+}

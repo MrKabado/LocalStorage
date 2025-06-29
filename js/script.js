@@ -110,7 +110,7 @@ function login(event) {
                 document.getElementById('logPass').value = '';  
 
                 window.alert(`Hello ${localStorage.getItem(`studentName${i}`)}`)             
-                window.location.href = '/homepage.html';
+                window.location.href = '/pages/homepage.html';
                 return;
             } else {
                 console.log(finder);

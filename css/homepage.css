@@ -32,10 +32,22 @@ body {
   align-items: center;
   width: 100%;
   padding: 10px;
+  gap: 5px;
+}
+
+.profile-section button {
+  font-size: small;
+  padding: 0;
 }
 
 .profile-section h3 {
   text-align: center;
+  margin: 0 0;
+}
+
+#student-id {
+  font-size: 10px;
+  color: red;
 }
 
 .school-logo {
