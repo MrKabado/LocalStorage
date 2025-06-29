@@ -12,6 +12,12 @@ body {
 }
 
 /* THE SIDEBAR STYLE IS IN INLINE */
+.sidebar {
+  position: sticky;
+  background-color: white;
+  height: auto;
+}
+
 .nav-section a:hover {
   opacity: 0.6;
 }
@@ -22,10 +28,39 @@ body {
 /* ADDED SOME FOR SIDEBAR */
 
 .page {
+  align-self: right;
   width: 100%;
   margin: 0 5%;
   border-radius: 10px;
   height: auto;
   padding: 15px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
 }
+
+.form-holder {
+  display: flex;
+  gap: 10px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 10px;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+
+.dashboard-title, .dashboard-des {
+  margin: 0;
+}
+
+

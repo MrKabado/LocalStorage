@@ -42,7 +42,7 @@ function register(event) {
                 } else {
                     regDisplay.style = 'display: block;';
                 }
-            }, 5000);
+            }, 3000);
 
             return;
         }
@@ -58,7 +58,7 @@ function register(event) {
             } else {
                 regDisplay.style = 'display: block;';
             }
-        }, 5000);
+        }, 3000);
         return;
     }
 
@@ -124,7 +124,7 @@ function login(event) {
                     } else {
                         logDisplay.style = 'display: block';
                     }
-                }, 5000);
+                }, 3000);
                 return;
             }
         } 
@@ -140,7 +140,7 @@ function login(event) {
                     } else {
                         logDisplay.style = 'display: block';
                     }
-                }, 5000);
+                }, 3000);
             return;
         }
             
