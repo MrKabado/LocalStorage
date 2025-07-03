@@ -63,25 +63,40 @@
             </div>
 
             <div>
-                <label for="editStudentID">student ID:</label>
-                <input id="editStudentID" type="number" placeholder="studentID">
-            </div>
-
-            <div>
-                <label for="editFullname">fullname:</label>
-                <input id="editFullname" type="text" placeholder="fullname">
-            </div>
-
-            <div>
                 <label for="editPassword">password:</label>
                 <input id="editPassword" type="text" placeholder="password">
             </div>
 
             <button type="submit">Save Changes</button>
             <p id="changeDisplay"></p>
-            <button type="button" onclick="goProfile()">Go Back to Profile</button>
+            <button type="button" onclick="goHomepage()">Go Back to Admin Homepage</button>
         </form>
     </div>
 </body>
-<script src="/js/editprofile.js"></script>
+<script>
+    document.getElementById('editUsername').value = localStorage.getItem('admin-user');
+    document.getElementById('editPassword').value = localStorage.getItem('admin-password');
+
+    function saveChanges(event) {
+        event.preventDefault();
+
+        localStorage.setItem('admin-user', document.getElementById('editUsername').value);
+        localStorage.setItem('admin-password', document.getElementById('editPassword').value);
+
+        changeDisplay.innerText = 'Changes saved successfully (admin)'
+        changeDisplay.style = 'color: green; font-size: 10px'
+
+        setTimeout(() => {
+            if (!changeDisplay) {
+            changeDisplay.style = 'display: block';
+            } else {
+            changeDisplay.style = 'display: none';
+            }
+        }, 5000)
+    }
+
+    function goHomepage() {
+        window.location.href = '../pages/admin-homepage.html';
+    }
+</script>
 </html>

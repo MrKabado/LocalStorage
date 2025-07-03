@@ -61,7 +61,7 @@ function register(event) {
         }, 3000);
         return;
     }
-
+    //TRUE
     count++;
     localStorage.setItem('count', count);
 

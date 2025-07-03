@@ -6,6 +6,7 @@
   <title>CPC IRREG</title>
   <link rel="stylesheet" href="/admin/css/admin-homepage.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link rel="icon" href="/img/cpc.jpg" type="image/png">
 
 </head>
 <body>
@@ -58,24 +59,27 @@
                   <button id="dash-btn" type="submit">Submit Dashboard</button>
                 </form>
 
-                <form>
+                <form onsubmit="submitAnnouncement()">
                   <h3>Announcement</h3>
-                  <input id="i-announcement-title" type="text" placeholder="dashboard title" required>
-                  <input id="i-announcement-des" type="text" placeholder="dashboard description" required>
-                  <button>Submit Dashboard</button>
+                  <input id="i-announcement-title" type="text" placeholder="announcement title" required>
+                  <input id="i-announcement-des" type="text" placeholder="announcement description" required>
+                  <button id="announce-btn" type="submit">Submit Dashboard</button>
                 </form>
             </div>
-            <button onclick="showHide(event)">Show Form</button>
+            <button onclick="showHide(event)" id="showbtn">Show Form</button>
 
             <div id="dashboard" class="dashboard">
               <h3>DASHBOARD</h3>
               <h3 id="dash-title" class="dashboard-title">asd</h3>
               <p id="dash-des" class="dashboard-des">des</p>
-              <button id="delete-btn-dash" onclick="deleteDashboard(event)">delete dashboard</button>
+              <button id="delete-btn-dash" onclick="deleteDashboard()">Delete Dashboard</button>
             </div>
 
             <div id="announcement" class="announement">
               <h3>ANNOUNCEMENT</h3>
+              <h3 id="announce-title" class="announce-title"></h3>
+              <p id="announce-des" class="announce-des"></p>
+              <button style="width: 100%" id="delete-btn-announce" onclick="deleteAnnouncement()">Delete Announcement</button>
             </div>
         </div>
     </div>
